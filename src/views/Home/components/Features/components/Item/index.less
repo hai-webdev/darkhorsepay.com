@@ -1,0 +1,30 @@
+.item-container {
+  width: calc(100% / 3 - 32px);
+  margin: 0 16px 32px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  .top {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    padding-bottom: 24px;
+    .icon {
+      width: 56px;
+      height: 56px;
+      margin-right: 20px;
+    }
+    .title {
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+  .bottom {
+    padding-top: 24px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #0f172a;
+  }
+}

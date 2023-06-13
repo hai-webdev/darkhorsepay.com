@@ -1,0 +1,44 @@
+.item-container {
+  width: calc(100% / 3);
+  padding: 0 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  .icon-box {
+    height: 36px;
+    display: block;
+    img {
+      width: 36px;
+      height: 36px;
+      &.icon {
+      }
+      &.icon-hover {
+        display: none;
+      }
+    }
+  }
+  .title {
+    margin-top: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #0f172a;
+  }
+  opacity: 0.8;
+  &:hover {
+    opacity: 1;
+  }
+  &.on {
+    opacity: 1;
+    .icon-box {
+        height: 36px;
+      img {
+        &.icon {
+          display: none;
+        }
+        &.icon-hover {
+          display: block;
+        }
+      }
+    }
+  }
+}
